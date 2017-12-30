@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+$whitish: #F1F1F1;
+
+.home section {
+    margin-bottom: 15vh;
+}
+
+h1, .site-title {
+    font-family: 'Lobster', cursive;
+}
+
+header {
+    margin-bottom: 1em;
+
+    h1, 
+    .byline {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .byline {
+        font-style: italic;
+        display: block;
+        font-weight: lighter;
+    }
+}
+
+.introduction {
+    display: flex;
+    align-items: flex-start;
+
+    img {
+        margin-right: 1em;
+        border: 5px solid $whitish;
+    }
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+
+        img {
+            margin: 0 auto 1em auto;
+        }
+    }
+}
+
+.categories {
+    width: 100%;
+
+    text-align: center;
+
+    li {
+        display: inline-block;
+        padding-right: 2em;
+
+        label {
+            cursor: pointer;
+
+            &:focus {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.gallery {
+    display: none;
+}
+
+.portfolio {
+    input[type=radio] {
+        display: none;
+    }
+
+    input[type=radio]:checked + .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+    }
+}
+
