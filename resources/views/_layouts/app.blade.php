@@ -11,16 +11,19 @@
 		<link rel="stylesheet" href="/css/minima.css">
 	</head>
 	<body>
-		@include('_includes/header')
+		<div id="app">
+            @include('_includes/header')
 
-		<main class="page-content" aria-label="Content">
-			<div class="wrapper">
-				@yield('main')
-			</div>
-		</main>
+            <main class="page-content" aria-label="Content">
+                <div class="wrapper">
+                    @yield('main')
+                </div>
+            </main>
 
-		@include('_includes/footer')
+            @include('_includes/footer')
+        </div>
 
 		<script src="/js/app.js"></script>
+        @stack('scripts')
 	</body>
 </html>

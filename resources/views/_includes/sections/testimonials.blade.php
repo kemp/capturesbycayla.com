@@ -5,12 +5,6 @@
         <span class="byline">People have lots of good things to say about me.</span>
     </header>
 
-    <div class="quote">
-        "She's great" &mdash; Steven Kemp
-    </div>
-
-    <div class="testimonial-nav">
-        (Bubbles)
-    </div>
+    <testimonial-slideshow></testimonial-slideshow>
 
 </section>

@@ -37,6 +37,7 @@ header {
     img {
         margin-right: 1em;
         border: 5px solid $whitish;
+        max-width: 250px;
     }
 
     @media(max-width: 600px) {
@@ -50,8 +51,49 @@ header {
 
 .categories {
     width: 100%;
-
+    margin: 0;
+    margin-bottom: 15px;
     text-align: center;
+
+    @media (max-width: 700px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3px;
+
+        font-size: 0.8em;
+        font-weight: 200;
+    }
+
+    @media (max-width: 400px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    button {
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.0em;
+
+        text-decoration: underline;
+
+
+        &.active {
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+
+            @media (min-width: 700px) {
+                &::after {
+                    content: '\276d';
+                    transform: rotate(90deg);
+                    position: absolute;
+                    left: 50%;
+                    top: 15px;
+                }
+            }
+        }
+    }
 
     li {
         display: inline-block;
@@ -68,18 +110,67 @@ header {
 }
 
 .gallery {
-    display: none;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
 
-.portfolio {
-    input[type=radio] {
-        display: none;
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    input[type=radio]:checked + .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1em;
+    img {
+        justify-self: center;
+        cursor: pointer;
+        display: block;
     }
 }
 
+.quotes {
+    display: block;
+    margin: 10px 30px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+
+    .quote {
+        text-align: center;
+        min-height: 150px;
+
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url('/images/quotes.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .slick-dots li button:before {
+        color: #F1F1F1;
+        font-size: 12px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: white;
+    }
+}
+
+.callout {
+    text-align: center;
+    background-color: #F1F1F1;
+    color: #2C2C2C;
+    min-height: 300px;
+    display: flex;
+    font-size: 6vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+
+    a {
+        color: #2C2C2C;
+    }
+
+    @media (min-width: 800px) {
+        font-size: 3em;
+    }
+}

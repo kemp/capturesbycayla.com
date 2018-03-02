@@ -13,7 +13,11 @@
                     </svg>
                 </span>
             </label>
-            <div class="trigger"></div>
+            <div class="trigger">
+                <a href="#portfolio" class="page-link">Portfolio</a>
+                <a href="#testimonials" class="page-link">Testimonials</a>
+                <a href="#contact" class="page-link">Contact Me</a>
+            </div>
         </nav>
     </div>
 </header>
