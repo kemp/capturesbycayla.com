@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ site.title }}</title>
+        <meta name="description" content="{{ site.description }}">
+
+        <link rel="stylesheet" href="{{ 'css/minima.css' | relative_url }}">
+
+        <!-- Slick Carosuel Javascript Library Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+        <!-- Viewer.js Javascript Library Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.10.0/viewer.min.css" integrity="sha256-bB3A0CfC8gU5TblqVKWuEkWvfZQyKgE3Fxmpx/0ZCzs=" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div id="app">
+            {% include header.html %}
+
+            <main class="page-content" aria-label="Content">
+                <div class="wrapper">
+                    {{ content }}
+                </div>
+            </main>
+
+            {% include footer.html %}
+        </div>
+
+        <!-- Apparently we need jQuery... -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Slick-Carosuel Javascript Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+        <!-- Viewer-js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.10.0/viewer.min.js" integrity="sha256-E8dJYYXy263xMWldFu4qdUOZmGD6v/QOJK+27f+kcrA=" crossorigin="anonymous"></script>
+        <!-- Application Javascript -->
+        <script src="{{ 'js/app.js' | relative_url }}"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42401881-6"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-42401881-6');
+        </script>
+    </body>
+</html>
