@@ -1,9 +1,17 @@
 'use strict';
 
 (function() {
+    enabledJavascript();
     initPortfolioSlideshow();
     initTestimonialSlideshow();
 }());
+
+function enabledJavascript() {
+    const body = document.querySelector('body');
+
+    body.classList.remove('no-js');
+    body.classList.add('js');
+}
 
 function initPortfolioSlideshow() {
     const ACTIVE_CLASS = 'active';
