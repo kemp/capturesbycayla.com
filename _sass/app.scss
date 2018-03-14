@@ -109,6 +109,12 @@ header {
     }
 }
 
+.no-js .portfolio-slideshow {
+    div:not(:first-child) {
+        display: none;
+    }
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -153,6 +159,10 @@ header {
     .slick-dots li.slick-active button:before {
         color: white;
     }
+}
+
+.no-js .quote {
+    margin-bottom: 3em;
 }
 
 .callout {
