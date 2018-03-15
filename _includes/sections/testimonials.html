@@ -1,4 +1,5 @@
 <section id="testimonials" class="testimonials">
+    {% assign testimonials = site.data.testimonials.testimonials %}
     
     <header>
         <h1>Testimonials</h1>
@@ -6,10 +7,9 @@
     </header>
 
     <div class="quotes">
-        <div class="quote"><p>"She's great!" &mdash; Steven Kemp</p></div>
-        <div class="quote"><p>"She's really great!" &mdash; Steven Kemp</p></div>
-        <div class="quote"><p>"She's super great!" &mdash; Steven Kemp</p></div>
-        <div class="quote"><p>"She's not great!" &mdash; Steven Kemp</p></div>
+        {% for testimonial in testimonials %}
+            <div class="quote"><p>"{{ testimonial.quote }}" &mdash; {{ testimonial.by }}</p></div>
+        {% endfor %}
     </div>
 
 </section>
