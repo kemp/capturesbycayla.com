@@ -1,0 +1,17 @@
+/* TEAM */
+    Lead: Steven Kemp
+    Email: cbc@steven.globaloffset.com
+    Location: Atlanta, GA, USA
+
+/* THANKS TO */
+    Name: Cayla
+        For taking Cassidy and I's prom pictures and giving me something to do.
+    
+    Name: Cassidy
+        For listening to me blab on about the website and support me when I wasn't motivated in myself
+
+/* SITE */   
+    Last update: ¯\_(ツ)_/¯
+    Standards: HTML5, CSS3, ES6
+    Components: jQuery, Viewer-JS, Slick Carousel, Google Analytics
+    Software: Sublime Text, MacVim, Terminal.app, Firefox, Git Tower for Mac, et al.
