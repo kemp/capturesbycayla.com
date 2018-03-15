@@ -1,4 +1,5 @@
 <section id="portfolio" class="portfolio">
+    {% assign categories = site.data.portfolio.portfolios %}
 
     <header>
         <h1>My Work</h1>
@@ -11,81 +12,24 @@
     </header>
 
     <ul class="categories">
-        <li><button class="active">Individual</button></li>
-        <li><button>Senior</button></li>
-        <li><button>Engagement</button></li>
-        <li><button>Couples</button></li>
-        <li><button>Weddings</button></li>
+        {% for category in categories limit:1 %}
+            <li><button class="active">{{ category.title }}</button></li>
+        {% endfor %}
+        {% for category in categories offset:1 %}
+            <li><button>{{ category.title }}</button></li>
+        {% endfor %}
     </ul>
 
     <div class="portfolio-slideshow">
-
-        <div>
-            <div class="gallery gallery-individual">
-                <img data-original="{{ 'img/slideshow/individual/1.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/1.jpg' | relative_path }}" alt="Gallery Individual">
-                <img data-original="{{ 'img/slideshow/individual/2.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/2.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/individual/3.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/3.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/individual/4.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/4.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/individual/5.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/5.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/individual/6.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/6.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/individual/7.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/7.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/individual/8.jpg' | relative_path }}" src="{{ 'img/slideshow/individual/thumbnails/8.jpg' | relative_path }}" alt="Fill Murray">
+        {% for category in categories %}
+            <div>
+                <div class="gallery gallery-{{ category.title }}">
+                    {% for image in category.images %}
+                        <img data-original="{{ image.img_url | relative_path }}" src="{{ image.img_thumbnail | relative_path }}" alt="{{ image.img_alt }}">
+                    {% endfor %}
+                </div>
             </div>
-        </div>
-
-        <div>
-            <div class="gallery gallery-senior">
-                <img data-original="{{ 'img/slideshow/senior/1.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/1.jpg' | relative_path }}" alt="Gallery Senior">
-                <img data-original="{{ 'img/slideshow/senior/2.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/2.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/senior/3.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/3.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/senior/4.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/4.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/senior/5.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/5.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/senior/6.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/6.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/senior/7.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/7.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/senior/8.jpg' | relative_path }}" src="{{ 'img/slideshow/senior/thumbnails/8.jpg' | relative_path }}" alt="Fill Murray">
-            </div>
-        </div>
-
-        <div>
-            <div class="gallery gallery-engagement">
-                <img data-original="{{ 'img/slideshow/engagement/1.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/1.jpg' | relative_path }}" alt="Gallery Engagement">
-                <img data-original="{{ 'img/slideshow/engagement/2.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/2.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/engagement/3.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/3.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/engagement/4.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/4.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/engagement/5.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/5.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/engagement/6.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/6.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/engagement/7.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/7.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/engagement/8.jpg' | relative_path }}" src="{{ 'img/slideshow/engagement/thumbnails/8.jpg' | relative_path }}" alt="Fill Murray">
-            </div>
-        </div>
-
-        <div>
-            <div class="gallery gallery-couples">
-                <img data-original="{{ 'img/slideshow/couples/1.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/1.jpg' | relative_path }}" alt="Gallery Couples">
-                <img data-original="{{ 'img/slideshow/couples/2.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/2.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/couples/3.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/3.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/couples/4.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/4.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/couples/5.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/5.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/couples/6.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/6.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/couples/7.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/7.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/couples/8.jpg' | relative_path }}" src="{{ 'img/slideshow/couples/thumbnails/8.jpg' | relative_path }}" alt="Fill Murray">
-            </div>
-        </div>
-
-        <div>
-            <div class="gallery gallery-weddings">
-                <img data-original="{{ 'img/slideshow/weddings/1.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/1.jpg' | relative_path }}" alt="Gallery Weddings">
-                <img data-original="{{ 'img/slideshow/weddings/2.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/2.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/weddings/3.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/3.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/weddings/4.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/4.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/weddings/5.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/5.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/weddings/6.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/6.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/weddings/7.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/7.jpg' | relative_path }}" alt="Fill Murray">
-                <img data-original="{{ 'img/slideshow/weddings/8.jpg' | relative_path }}" src="{{ 'img/slideshow/weddings/thumbnails/8.jpg' | relative_path }}" alt="Fill Murray">
-            </div>
-        </div>
-
+        {% endfor %}
     </div>
-
 
 </section>

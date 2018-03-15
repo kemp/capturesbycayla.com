@@ -1,0 +1,171 @@
+portfolios:
+  - title: Individual
+    images:
+      - img_url: "img/slideshow/individual/1.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/1.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/2.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/2.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/3.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/3.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/4.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/4.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/5.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/5.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/6.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/6.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/7.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/7.jpg"
+        img_alt: "Gallery Individual"
+
+      - img_url: "img/slideshow/individual/8.jpg"
+        img_thumbnail: "img/slideshow/individual/thumbnails/8.jpg"
+        img_alt: "Gallery Individual"
+
+  - title: Senior
+    images:
+      - img_url: "img/slideshow/senior/1.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/1.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/2.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/2.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/3.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/3.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/4.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/4.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/5.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/5.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/6.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/6.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/7.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/7.jpg"
+        img_alt: "Gallery Senior"
+
+      - img_url: "img/slideshow/senior/8.jpg"
+        img_thumbnail: "img/slideshow/senior/thumbnails/8.jpg"
+        img_alt: "Gallery Senior"
+
+  - title: Engagement
+    images:
+      - img_url: "img/slideshow/engagement/1.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/1.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/2.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/2.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/3.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/3.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/4.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/4.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/5.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/5.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/6.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/6.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/7.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/7.jpg"
+        img_alt: "Gallery Engagement"
+
+      - img_url: "img/slideshow/engagement/8.jpg"
+        img_thumbnail: "img/slideshow/engagement/thumbnails/8.jpg"
+        img_alt: "Gallery Engagement"
+
+  - title: Couples
+    images:
+      - img_url: "img/slideshow/couples/1.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/1.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/2.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/2.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/3.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/3.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/4.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/4.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/5.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/5.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/6.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/6.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/7.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/7.jpg"
+        img_alt: "Gallery Couples"
+
+      - img_url: "img/slideshow/couples/8.jpg"
+        img_thumbnail: "img/slideshow/couples/thumbnails/8.jpg"
+        img_alt: "Gallery Couples"
+
+  - title: Weddings
+    images:
+      - img_url: "img/slideshow/weddings/1.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/1.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/2.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/2.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/3.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/3.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/4.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/4.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/5.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/5.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/6.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/6.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/7.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/7.jpg"
+        img_alt: "Gallery Weddings"
+
+      - img_url: "img/slideshow/weddings/8.jpg"
+        img_thumbnail: "img/slideshow/weddings/thumbnails/8.jpg"
+        img_alt: "Gallery Weddings"
+
