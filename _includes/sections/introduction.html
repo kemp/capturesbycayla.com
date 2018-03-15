@@ -1,7 +1,13 @@
 <section class="introduction">
-    <img src="{{ 'img/me.jpg' | relative_url }}" alt="Cayla Keiser">
+    <img src="{{ site.data.introduction.img_url | relative_url }}" alt="{{ site.data.introduction.img_alt }}">
     <div>
-        <h2>Hi! I'm Cayla.</h2>
-        <p>{{ site.description }}</p>
+        <h2>{{ site.data.introduction.introduction }}</h2>
+
+        {% assign body = site.data.introduction.body %}
+        {% if body and body != nil %}
+            <p>{{ body }}</p>
+        {% else %}
+            <p>{{ site.description }}</p>
+        {% endif %}
     </div>
 </section>
