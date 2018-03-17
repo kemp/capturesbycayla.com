@@ -1,37 +1,37 @@
 portfolios:
-  - title: Individual
-    images:
-      - img_url: "img/slideshow/individual/1.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/1.jpg"
-        img_alt: "Gallery Individual"
+  # - title: Individual
+  #   images:
+  #     - img_url: "img/slideshow/individual/1.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/1.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/2.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/2.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/2.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/2.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/3.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/3.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/3.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/3.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/4.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/4.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/4.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/4.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/5.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/5.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/5.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/5.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/6.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/6.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/6.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/6.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/7.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/7.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/7.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/7.jpg"
+  #       img_alt: "Gallery Individual"
 
-      - img_url: "img/slideshow/individual/8.jpg"
-        img_thumbnail: "img/slideshow/individual/thumbnails/8.jpg"
-        img_alt: "Gallery Individual"
+  #     - img_url: "img/slideshow/individual/8.jpg"
+  #       img_thumbnail: "img/slideshow/individual/thumbnails/8.jpg"
+  #       img_alt: "Gallery Individual"
 
   - title: Senior
     images:
