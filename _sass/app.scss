@@ -77,6 +77,10 @@ header {
 
         text-decoration: underline;
 
+        &:focus {
+            outline: 1px dotted $grey-color-light;
+        }
+
 
         &.active {
             font-weight: bold;
