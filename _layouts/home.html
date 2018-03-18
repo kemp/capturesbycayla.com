@@ -31,8 +31,26 @@
 
         <!-- Viewer-js library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.10.0/viewer.min.js" integrity="sha256-E8dJYYXy263xMWldFu4qdUOZmGD6v/QOJK+27f+kcrA=" crossorigin="anonymous"></script>
-        <!-- Application Javascript -->
-        <script src="{{ 'js/app.js' | relative_url }}"></script>
+        <script>
+            // Load Backup Viewer.js if CDN not available
+            if (! window.Viewer ) {
+                console.warn('Backup Viewer Script/Styles loaded!');
+                
+                var viewerScript = document.createElement('script');
+                viewerScript.setAttribute('src', 'js/viewer.min.js');
+                document.body.appendChild(viewerScript);
+
+                var viewerStyle = document.createElement('link');
+                viewerStyle.setAttribute('rel', 'stylesheet');
+                viewerStyle.setAttribute('href', 'css/viewer.min.css');
+                document.body.appendChild(viewerStyle);
+            }
+
+            // Load Application Javascript
+            var appjs = document.createElement('script');
+            appjs.setAttribute('src', '{{ 'js/app.js' | relative_url }}');
+            document.body.appendChild(appjs);
+        </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42401881-6"></script>
