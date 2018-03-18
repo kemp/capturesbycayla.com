@@ -23,6 +23,8 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+
+  background: linear-gradient(to bottom right, rgba(44, 44, 44, 0), #6E6E6E), $background-color;
 }
 
 
