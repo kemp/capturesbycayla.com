@@ -171,10 +171,16 @@ header {
 }
 
 .quotes {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
     margin: 10px 30px;
     box-sizing: border-box;
     padding-bottom: 15px;
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 
     .quote {
         text-align: center;
