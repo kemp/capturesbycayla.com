@@ -1,12 +1,12 @@
 'use strict';
 
 (function() {
-    enabledJavascript();
+    enableJavascript();
     initPortfolioSlideshow();
     initTestimonialSlideshow();
 }());
 
-function enabledJavascript() {
+function enableJavascript() {
     const body = document.querySelector('body');
 
     body.classList.remove('no-js');
@@ -34,7 +34,7 @@ function initPortfolioSlideshow() {
         let oldSlide = currentPortfolioSlide;
         currentPortfolioSlide = slide;
 
-        // if (oldSlide === slide) return;
+        if (oldSlide === slide) return;
 
         currentOperations.forEach((operation) => {
             clearTimeout(operation);
@@ -76,13 +76,6 @@ function initPortfolioSlideshow() {
         });
     }
 
-    // Create the slideshow
-    // $(slideshow).slick({
-    //     arrows: false,
-    //     fade: true,
-    //     accessibility: false,
-    // });
-
     // Add an event listener to all buttons
     buttons.forEach((button, index) => {
         // Event listener: when this button is pressed, loop through all elements and remove `active` class,
@@ -99,8 +92,7 @@ function initPortfolioSlideshow() {
             // and add the `active` class to it...
             clickedButton.classList.add(ACTIVE_CLASS);
 
-            // then select it with slick.
-            // $(slideshow).slick('slickGoTo', index);
+            // then select it.
             setPortfolioSlide(galleries[index]);
         });
     });
