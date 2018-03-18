@@ -3,7 +3,6 @@
 (function() {
     enableJavascript();
     initPortfolioSlideshow();
-    initTestimonialSlideshow();
 }());
 
 function enableJavascript() {
@@ -104,14 +103,4 @@ function initPortfolioSlideshow() {
             url: 'data-original'
         });
     }
-}
-
-function initTestimonialSlideshow() {
-    let slideshow = document.querySelector('.quotes');
-
-    $(slideshow).slick({
-        arrows: true,
-        autoplay: true,
-        dots: true,
-    });
 }
