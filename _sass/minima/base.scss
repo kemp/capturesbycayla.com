@@ -24,7 +24,11 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
 
-  background: linear-gradient(to bottom right, rgba(44, 44, 44, 0), #6E6E6E), $background-color;
+  background: url('/img/noise.png'), linear-gradient(to bottom right, rgba(44, 44, 44, 0), #6E6E6E), $background-color;
+
+  @media (max-width: 400px) {
+    background: url('/img/noise.png'), linear-gradient(to bottom, rgba(44, 44, 44, 0), #6E6E6E), $background-color;
+  }
 }
 
 
