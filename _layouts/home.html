@@ -43,19 +43,19 @@
             // Load Backup Viewer.js if CDN not available
             if (! window.Viewer ) {
                 console.warn('Backup Viewer Script/Styles loaded!');
-                
-                var viewerScript = document.createElement('script');
+
+                let viewerScript = document.createElement('script');
                 viewerScript.setAttribute('src', 'js/viewer.min.js');
                 document.body.appendChild(viewerScript);
 
-                var viewerStyle = document.createElement('link');
+                let viewerStyle = document.createElement('link');
                 viewerStyle.setAttribute('rel', 'stylesheet');
                 viewerStyle.setAttribute('href', 'css/viewer.min.css');
-                document.body.appendChild(viewerStyle);
+                document.head.appendChild(viewerStyle);
             }
 
             // Load Application Javascript
-            var appjs = document.createElement('script');
+            let appjs = document.createElement('script');
             appjs.setAttribute('src', '{{ 'js/app.js' | relative_url }}');
             document.body.appendChild(appjs);
         </script>
