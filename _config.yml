@@ -2,7 +2,9 @@
 title: Captures By Cayla
 email: cayla@capturesbycayla.com
 description: > # this means to ignore newlines until "baseurl:"
-  ~~ Under Construction ~~ This site is still under construction. Check back later to see the site completed. 
+  <h2>🚧👷🚧👷</h2>
+  <p>Whoah there! This site is still under construction. Check back later to see the site completed!</p>
+  <h2>🚧👷🚧👷</h2>
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://capturesbycayla.github.io" # the base hostname & protocol for your site
 
