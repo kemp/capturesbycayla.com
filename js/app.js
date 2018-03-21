@@ -15,54 +15,47 @@ function enableJavascript() {
 function initPortfolioSlideshow() {
     const ACTIVE_CLASS = 'active';
     const SELECTED_SLIDE = 'selected';
-    const FADE_IN = 'fade-in';
-    const FADE_OUT = 'fade-out';
     const LAZY_SRC = 'data-lazy';
 
-    let slideshow = document.querySelector('.portfolio-slideshow');
     let buttons = document.querySelectorAll('.categories button');
     let galleries = document.querySelectorAll('.gallery');
 
-    // Create the tabs
-    let currentPortfolioSlide = galleries[0];
+    // Set the current portfolio slide. If there is a number in the cache, use that. Otherwise, start with the first item.
+    let slideNum = 0;
 
-    // Set any currently running animations to this variable.
-    let currentOperations = [];
+    if (typeof(Storage) !== 'undefined') {
+        slideNum = sessionStorage.slide || 0;
+    }
+
+    let currentPortfolioSlide = galleries[slideNum];
+
+    showSlide(currentPortfolioSlide);
+
+    selectButton(buttons[slideNum]);
 
     function setPortfolioSlide(slide) {
-        let oldSlide = currentPortfolioSlide;
-        currentPortfolioSlide = slide;
+        if (currentPortfolioSlide === slide) return;
 
-        if (oldSlide === slide) return;
-
-        currentOperations.forEach((operation) => {
-            clearTimeout(operation);
+        galleries.forEach(gallery => {
+            hideSlide(gallery);
         });
 
-        currentOperations = [];
-
-        slideshow.querySelectorAll('.gallery.selected, .gallery.fade-in').forEach((el) => {
-            hideSlide(el);
-        });
         showSlide(slide);
+
+        if (typeof(Storage) !== 'undefined') {
+            sessionStorage.slide = Array.prototype.indexOf.call(galleries, slide);
+        }
+
+        currentPortfolioSlide = slide;
     }
 
     function hideSlide(slide) {
-        slide.classList.remove(FADE_IN);
-        slide.classList.add(FADE_OUT);
-        currentOperations.push(setTimeout(() => {
-            slide.classList.remove(SELECTED_SLIDE);
-            slide.classList.remove(FADE_OUT);
-        }, 500));
+        slide.classList.remove(SELECTED_SLIDE);
     }
 
     function showSlide(slide) {
         lazyLoadImages(slide);
-        slide.classList.add(FADE_IN);
-        currentOperations.push(setTimeout(() => {
-            slide.classList.add(SELECTED_SLIDE);
-            slide.classList.remove(FADE_IN);
-        }, 500));
+        slide.classList.add(SELECTED_SLIDE);
     }
 
     function lazyLoadImages(slide) {
@@ -77,24 +70,25 @@ function initPortfolioSlideshow() {
 
     // Add an event listener to all buttons
     buttons.forEach((button, index) => {
-        // Event listener: when this button is pressed, loop through all elements and remove `active` class,
-        // then add the active class to that button and select it using Slick's API.
+        // Event listener: when this button is pressed, select the active button and active slide.
         button.addEventListener('click', (event) => {
-            // Remove the active class from all elements
-            buttons.forEach((b) => {
-                b.classList.remove(ACTIVE_CLASS);
-            });
+            // Select the button
+            selectButton(event.target);
 
-            // Find the clicked button...
-            let clickedButton = event.target;
-
-            // and add the `active` class to it...
-            clickedButton.classList.add(ACTIVE_CLASS);
-
-            // then select it.
+            // then select the slide.
             setPortfolioSlide(galleries[index]);
         });
     });
+
+    function selectButton(clickedButton) {
+        // Remove the active class from all buttons...
+        buttons.forEach(button => {
+            button.classList.remove(ACTIVE_CLASS);
+        });
+
+        // and add the active class to the selected one.
+        clickedButton.classList.add(ACTIVE_CLASS);
+    }
 
     // Add Viewer element to each category
     for(let gallery of galleries) {

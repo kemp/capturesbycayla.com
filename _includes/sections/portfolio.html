@@ -22,7 +22,7 @@
 
     <div class="portfolio-slideshow">
         {% for category in categories limit:1 %}
-            <div class="gallery gallery-{{ category.title }} selected">
+            <div class="gallery gallery-{{ category.title }}">
                 {% for image in category.images %}
                     <img data-original="{{ image.img_url | relative_path }}" src="{{ image.img_thumbnail | relative_path }}" alt="{{ image.img_alt }}">
                 {% endfor %}
