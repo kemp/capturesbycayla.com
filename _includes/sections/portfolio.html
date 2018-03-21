@@ -24,7 +24,7 @@
         {% for category in categories limit:1 %}
             <div class="gallery gallery-{{ category.title }}">
                 {% for image in category.images %}
-                    <img data-original="{{ image.img_url | relative_path }}" src="{{ image.img_thumbnail | relative_path }}" alt="{{ image.img_alt }}">
+                    <img data-original="{{ image.img_url | relative_path }}" src="{{ image.img_thumbnail | relative_path }}" alt="">
                 {% endfor %}
             </div>
         {% endfor %}
@@ -32,7 +32,7 @@
         {% for category in categories offset:1 %}
             <div class="gallery gallery-{{ category.title }}">
                 {% for image in category.images %}
-                    <img data-original="{{ image.img_url | relative_path }}" data-lazy="{{ image.img_thumbnail | relative_path }}" alt="{{ image.img_alt }}">
+                    <img data-original="{{ image.img_url | relative_path }}" data-lazy="{{ image.img_thumbnail | relative_path }}" alt="">
                 {% endfor %}
             </div>
         {% endfor %}
