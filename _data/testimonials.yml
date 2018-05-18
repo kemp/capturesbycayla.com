@@ -1,9 +1,3 @@
 testimonials:
-  - quote: "She's great!"
-    by: "Steven Kemp"
-  - quote: "She's really great!"
-    by: "Steven Kemp"
-  - quote: "She's kinda great!"
-    by: "Steven Kemp"
-  - quote: "She's not great!"
-    by: "Not Steven Kemp"
+  # - quote: "I said this"
+  #   by: "Who Said It"
