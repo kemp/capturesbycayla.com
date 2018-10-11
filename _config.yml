@@ -1,12 +1,12 @@
 # Site settings
 title: Captures By Cayla
-email: cayla@capturesbycayla.com
+email: contact@example.com
 description: > # this means to ignore newlines until "baseurl:"
-  <h2>🚧👷🚧👷</h2>
-  <p>Whoah there! This site is still under construction. Check back later to see the site completed!</p>
-  <h2>🚧👷🚧👷</h2>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tenetur repellendus,
+  nisi quas sunt possimus, dolore accusantium facilis ut aspernatur eligendi vero deleniti.<br>
+  Quia aperiam earum, reiciendis consequatur magnam animi.
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://capturesbycayla.github.io" # the base hostname & protocol for your site
+url: "https://rockhopper72.github.io/capturesbycayla.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

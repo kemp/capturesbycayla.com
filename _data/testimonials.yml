@@ -1,3 +1,9 @@
 testimonials:
-  # - quote: "I said this"
-  #   by: "Who Said It"
+  - quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, repellat!"
+    by: "Terry J. Shubert"
+  - quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quod illo blanditiis alias architecto asperiores, cumque inventore optio quo doloremque."
+    by: "Jody J. Paul"
+  - quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, officia ex provident, consectetur maxime velit."
+    by: "Tara Wade"
+  - quote: "Lorem ipsum dolor sit amet."
+    by: "Martin Highsmith"
